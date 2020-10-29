@@ -4,7 +4,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:c="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
     xmlns:vm="clr-namespace:TizenCompiledBindingSample"
-    x:Class="TizenCompiledBindingSample.MainPage">
+    x:Class="TizenCompiledBindingSample.MainPage"
+    x:DataType="{x:Type vm:MainPageViewModel}">
     <c:BezelInteractionPage.BindingContext>
         <vm:MainPageViewModel />
     </c:BezelInteractionPage.BindingContext>
