@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c:BezelInteractionPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:c="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+    xmlns:vm="clr-namespace:TizenCompiledBindingSample"
+    x:Class="TizenCompiledBindingSample.MainPage">
+    <c:BezelInteractionPage.BindingContext>
+        <vm:MainPageViewModel />
+    </c:BezelInteractionPage.BindingContext>
+    <c:BezelInteractionPage.Content>
+    <StackLayout>
+      <Label Text="{Binding Hello}"
+          VerticalOptions="CenterAndExpand"
+          HorizontalOptions="CenterAndExpand" />
+    </StackLayout>
+  </c:BezelInteractionPage.Content>
+</c:BezelInteractionPage>
