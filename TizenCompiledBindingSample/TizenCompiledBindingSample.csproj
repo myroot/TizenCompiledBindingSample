@@ -20,12 +20,14 @@
 
   <ItemGroup>
     <PackageReference Include="Tizen.Wearable.CircularUI" Version="1.5.2" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1560" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="App.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
+    <ProjectReference Include="..\TizenCompliedBindingCore\TizenCompliedBindingCore\TizenCompliedBindingCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="MainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
